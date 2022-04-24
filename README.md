@@ -10,6 +10,7 @@
 The aims of this project are twofold:
 - a homepage displaying the weather forecast for a given city (based on API's) ;
 - a website to share pictures: users can add their own images to the website, view them and even comment them.
+The website's design is responsive.
 
 ## Weather forecast
 

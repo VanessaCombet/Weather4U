@@ -65,7 +65,7 @@ function getNightOrDay(timeStamp, timeSunSet, timeSunRise) {
   }
 }
 
-// pour calculer le jour/date
+// pour calculer le jour/date/mois
 function getTheDay(timeStamp) {
   try {
     const myDate = new Date(timeStamp * 1000);
@@ -79,6 +79,7 @@ function getTheDay(timeStamp) {
   }
 }
 
+// pour recuperer heure
 function getTheTime(timeStamp) {
   let myTime = new Date(timeStamp * 1000);
   function addLeadingZeros(n) {
@@ -94,10 +95,10 @@ function getTheTime(timeStamp) {
       ? "0" + myTime.getUTCMinutes()
       : myTime.getUTCMinutes()) +
     (myTime.getUTCHours() < 12 ? "am" : "pm");
-  console.log(formattedTime);
   return formattedTime;
 }
 
+// pour afficher heure locale
 function createTimeSpan(timeStamp) {
   let spanItem = document.createElement("span");
   let time = getTheTime(timeStamp);
