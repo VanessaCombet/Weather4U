@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1;
+  letter-spacing: 0.75px;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  background: linear-gradient(to bottom, #004683, #881da8);
+  transition: all 0.3s;
+  overflow-x: hidden;
+}
+
+.layout {
+  display: grid;
+  grid:
+    "header" auto
+    "main" 1fr
+    "footer" auto
+    / 1fr;
+  gap: 1.8rem;
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+}
+
+.heading-primary {
+  text-align: center;
+  font-size: 5.2rem;
+  line-height: 1.05;
+  padding: 3.2rem 0 5.2rem 0;
+}
+
+.heading-secondary {
+  font-size: 3.2rem;
+  margin: 2.4rem 0;
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  margin: 1.8rem 0;
+  font-size: 1.8rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  padding: 2.4rem 4.8rem;
+  margin: 0 auto;
+}
+
+/* GRIDS */
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+  margin: 1.8rem 2.4rem;
+}
+
+/* BUTTONS */
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 600;
+
+  margin-left: 4rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  transition: all 0.3s;
+}
+
+.btn-form {
+  color: #004683;
+  align-self: end;
+  padding: 1.2rem;
+  border-radius: 9px;
+}
+
+.btn-form:hover,
+.btn-form:active {
+  background-color: #fdf2e9;
+  color: #004683;
+}
+
+*:focus {
+  border-radius: 9px;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.658);
+}
+
+.text-danger {
+  color: #ff0000;
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 1.6rem;
+}
+
+.to-hide {
+  display: none !important;
+}
+
+.back-to-top {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+}
+
+.back-to-top > a {
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: yellow;
+  border-radius: 50%;
+}

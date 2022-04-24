@@ -1,0 +1,6 @@
+# pour garder clés secrètes
+static/js/config.js
+.DS_Store
+static/css/.DS_Store
+env/
+__pycache__/
